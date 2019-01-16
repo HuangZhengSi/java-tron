@@ -32,7 +32,7 @@ change_branch_CMD="sed -i '1c branch_name_in_CI=$TRAVIS_BRANCH' /data/workspace/
 echo "$TRAVIS_BRANCH"
 
 
-if [[ "$TRAVIS_BRANCH" = "develop" || "$TRAVIS_BRANCH" = "master" ]];then
+if [[ "$TRAVIS_BRANCH" = "develop" || "$TRAVIS_BRANCH" = "try_circleci" ]];then
   echo "Init the docker stest env"
 
   ssh java-tron@$stest_server -p 22008 $change_branch_CMD
