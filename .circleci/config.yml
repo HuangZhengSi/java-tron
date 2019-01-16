@@ -5,17 +5,12 @@
 version: 2
 jobs:
   build:
-    docker:
-    - image: circleci/openjdk:8-jdk
-
     working_directory: ~/java-tron
     steps:
     - checkout
     - run: ./gradlew build
 
   test:
-    docker:
-      -image: circleci/openjdk:8-jdk
     steps:
     - run: sudo bash deploy.sh
 
