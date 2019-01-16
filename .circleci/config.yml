@@ -2,15 +2,11 @@
 #
 # Check https://circleci.com/docs/2.0/language-java/ for more details
 #
-version: 2.1
+version: 2
 jobs:
   build:
     docker:
     - image: circleci/openjdk:8-jdk
-
-    branches:
-      only:
-      - try_circleci
 
     working_directory: ~/java-tron
     steps:
