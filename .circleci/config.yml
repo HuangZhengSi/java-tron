@@ -11,8 +11,7 @@ jobs:
     working_directory: ~/java-tron
     steps:
     - checkout
-    - run:
-      command: ./gradlew build
+    - run: ./gradlew build
 
   test:
     docker:
