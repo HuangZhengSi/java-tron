@@ -12,10 +12,11 @@ jobs:
     - checkout
     - run: cp -f config/checkstyle/checkStyle.xml config/checkstyle/checkStyleAll.xml
     - run: ./gradlew build -x test
-
-  test:
-    docker:
-    - image: circleci/openjdk:8-jdk-browsers
-    steps:
     - run: sudo bash deploy.sh
+
+#  test:
+#    docker:
+#    - image: circleci/openjdk:8-jdk-browsers
+#    steps:
+#    - run: sudo bash deploy.sh
 
