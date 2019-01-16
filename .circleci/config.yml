@@ -7,12 +7,20 @@ jobs:
   build:
     docker:
     - image: circleci/openjdk:8-jdk
+
+    branches:
+      only:
+      - try_circleci
+
     working_directory: ~/java-tron
     steps:
     - checkout
-
-    - run: sudo sh tron.sh
-    - run: "./gradlew build"
-    - run: "./gradlew jacocoTestReport"
-    - run: sudo bash deploy.sh
+    - run:
+      command: sh tron.sh
+    - run:
+      command: ./gradlew build
+    - run:
+      command: ./gradlew jacocoTestReport
+    - run:
+      command: sudo bash deploy.sh
 
