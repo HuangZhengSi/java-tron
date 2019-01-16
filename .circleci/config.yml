@@ -12,11 +12,11 @@ jobs:
     steps:
     - checkout
     - run:
-      command: sh tron.sh
-    - run:
       command: ./gradlew build
-    - run:
-      command: ./gradlew jacocoTestReport
-    - run:
-      command: sudo bash deploy.sh
+
+  test:
+    docker:
+      -image: circleci/openjdk:8-jdk
+    steps:
+    - run: sudo bash deploy.sh
 
