@@ -11,10 +11,8 @@ jobs:
     steps:
     - add_ssh_keys:
         fingerprints:
-          - "w3l8nzwJI0JHSITUocGV/RE6sXWssMlJVS9tV9MwrY8"
+          - "10:6c:75:f0:31:6a:d9:fc:c7:97:fc:4e:a9:3d:96:77"
     - checkout
-    - run: cp -f config/checkstyle/checkStyle.xml config/checkstyle/checkStyleAll.xml
-    - run: ./gradlew build -x test
     - run: sudo bash deploy.sh
 
 #  test:
