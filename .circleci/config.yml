@@ -10,7 +10,8 @@ jobs:
     working_directory: ~/java-tron
     steps:
     - checkout
-    - run: ./gradlew build
+    - run: cp -f config/checkstyle/checkStyle.xml config/checkstyle/checkStyleAll.xml
+    - run: ./gradlew build -x test
 
   test:
     docker:
