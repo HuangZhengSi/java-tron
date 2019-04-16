@@ -1,5 +1,9 @@
 steps:
 
 - command: |
-  echo "test build"  && \
-  ./gradlew build
+  echo "cat multios result"  && \
+  curl http://60.205.215.34/multi_os_result
+
+- command: |
+  echo "cat dailybuild result"  && \
+  curl http://60.205.215.34/Daily_Build_Task_Report
