@@ -12,4 +12,3 @@ steps:
   label: Daily_Build_Task_Report
   timeout: 60
 
-
