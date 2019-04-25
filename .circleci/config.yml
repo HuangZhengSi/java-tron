@@ -17,9 +17,9 @@ jobs:
         command: curl http://60.205.215.34/multi_os_result
 
     - run:
-        name: Daily Build Report
-        command: curl http://60.205.215.34/Daily_Build_Task_Report
+        name: Query Sonar Result (Fail)
+        command: sh querysonar.sh
 
     - run:
-        name: Query Sonar Result
-        command: sh querysonar.sh
+        name: Query Sonar Result (Pass)
+        command: sh querysonar_zs.sh
