@@ -20,6 +20,6 @@ jobs:
         name: Query Sonar Result (Pass)
         command: sh querysonar_zs.sh
 
-    - run:
-        name: Query Sonar Result (Fail)
-        command: sh querysonar.sh
+#    - run:
+#        name: Query Sonar Result (Fail)
+#        command: sh querysonar.sh
