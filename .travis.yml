@@ -21,11 +21,6 @@ matrix:
   - name: build
     script:
     - sh tron.sh
-    - "./gradlew sonarqube"
-
-  - name: build
-    script:
-    - sh tron.sh
     -  "./gradlew build"
     - "./gradlew jacocoTestReport"
 

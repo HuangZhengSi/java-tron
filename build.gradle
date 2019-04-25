@@ -259,13 +259,6 @@ run {
     }
 }
 
-sonarqube {
-    properties {
-        property "sonar.projectName", "java-tron"
-        property "sonar.projectKey", "java-tron"
-    }
-}
-
 shadowJar {
     baseName = 'java-tron'
     classifier = null
