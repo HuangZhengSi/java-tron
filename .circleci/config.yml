@@ -17,9 +17,9 @@ jobs:
         command: curl http://60.205.215.34/multi_os_result
 
     - run:
-        name: Query Sonar Result (Fail)
-        command: sh querysonar.sh
-
-    - run:
         name: Query Sonar Result (Pass)
         command: sh querysonar_zs.sh
+
+    - run:
+        name: Query Sonar Result (Fail)
+        command: sh querysonar.sh
