@@ -10,9 +10,8 @@ buildscript {
 }
 
 plugins {
-    id "org.sonarqube" version "2.2"
+    id "org.sonarqube" version "2.7"
 }
-
 
 group 'org.tron'
 version '1.0.0'
@@ -260,6 +259,13 @@ run {
     }
 }
 
+sonarqube {
+    properties {
+        property "sonar.projectName", "java-tron"
+        property "sonar.projectKey", "java-tron"
+    }
+}
+
 shadowJar {
     baseName = 'java-tron'
     classifier = null
@@ -295,13 +301,6 @@ task stest(type: Test) {
         append = false
         destinationFile = file("$buildDir/jacoco/jacocoTest.exec")
         classDumpDir = file("$buildDir/jacoco/classpathdumps")
-    }
-}
-
-sonarqube {
-    properties {
-        property "sonar.projectName", "java-tron"
-        property "sonar.projectKey", "java-tron"
     }
 }
 
