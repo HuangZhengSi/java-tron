@@ -23,6 +23,10 @@
   <a href="https://codecov.io/gh/tronprotocol/java-tron">
     <img src="https://codecov.io/gh/tronprotocol/java-tron/branch/develop/graph/badge.svg" />
   </a>
+
+  <a href="https://sonarcloud.io/dashboard?id=java-tron">
+    <img src="https://sonarcloud.io/api/project_badges/measure?project=java-tron&metric=alert_status" />
+  </a>
   
   <a href="https://github.com/tronprotocol/java-tron/issues">
     <img src="https://img.shields.io/github/issues/tronprotocol/java-tron.svg">
@@ -39,6 +43,7 @@
   <a href="LICENSE">
     <img src="https://img.shields.io/github/license/tronprotocol/java-tron.svg">
   </a>
+
 </p>
 
 <p align="center">
