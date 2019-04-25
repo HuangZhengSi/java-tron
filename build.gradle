@@ -13,12 +13,6 @@ plugins {
     id "org.sonarqube" version "2.2"
 }
 
-sonarqube {
-    properties {
-        property "sonar.projectName", "java-tron"
-        property "sonar.projectKey", "java-tron"
-    }
-}
 
 group 'org.tron'
 version '1.0.0'
@@ -301,6 +295,13 @@ task stest(type: Test) {
         append = false
         destinationFile = file("$buildDir/jacoco/jacocoTest.exec")
         classDumpDir = file("$buildDir/jacoco/classpathdumps")
+    }
+}
+
+sonarqube {
+    properties {
+        property "sonar.projectName", "java-tron"
+        property "sonar.projectKey", "java-tron"
     }
 }
 

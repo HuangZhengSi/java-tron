@@ -18,9 +18,9 @@ cache:
   - '$HOME/.sonar/cache'
 matrix:
   include:
-  - name: Sonar Check
-    script:
-    - "./gradlew sonarqube"
+#  - name: Sonar Check
+#    script:
+#    - "./gradlew sonarqube"
 
   - name: build
     script:
