@@ -7,7 +7,6 @@ jobs:
       - develop
       - try_circleci
 
-
     docker:
     - image: circleci/openjdk:8-jdk-browsers
     working_directory: ~/java-tron
